@@ -1,0 +1,42 @@
+class Main {
+    function void main() {
+        var TicTacToe game;
+	  
+let game = TicTacToe.new();
+do game.UI();
+        return;
+    }
+function bool strcmp(String str1, String str2) {
+    var Array char1, char2;
+    var int i;
+  
+    if (~(str1.length() = str2.length())) {
+      return false;
+    }
+
+    let char1 = Array.new(str1.length());
+    let char2 = Array.new(str2.length());
+
+    let i = 0;
+    while (i < str1.length()) {
+      let char1[i] = str1.charAt(i);
+      let i = i + 1;
+    }
+
+    let i = 0;
+    while (i < str2.length()) {
+      let char2[i] = str2.charAt(i);
+      let i = i + 1;
+    }
+
+    let i = 0;
+    while (i < str1.length()) {
+      if (~(char1[i] = char2[i])) {
+        return false;
+      }
+      let i = i + 1;
+    }
+
+    return true;
+  }
+}
